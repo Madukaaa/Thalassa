@@ -1,0 +1,124 @@
+body::before {
+    content: "";
+    background-image: url('Assests/Background3.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 0.1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+#main-heading {
+    position: relative;
+    z-index: 2;
+    width: 60%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+.category {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.category-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.category-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.item {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.inline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.item-name {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.item-description {
+    font-size: 0.9em;
+    margin: 10px 0;
+}
+
+.item-price {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.item-quantity {
+    display: flex;
+    align-items: center;
+}
+
+.quantity {
+    width: 50px;
+    margin-left: 5px;
+}
+
+.item-customizer {
+    margin: 10px 0;
+}
+
+.customize-select {
+    width: 100%;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

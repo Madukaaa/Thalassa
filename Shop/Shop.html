@@ -3,26 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Shop</title>
+    <link rel="stylesheet" href="styles_shop.css">
 </head>
 <body>
+    <div id="main-heading">
+        <h1>Shop</h1>
+        <p id="shop-description">
+            Welcome to our aquatic haven. We offer a diverse array of live fish, sea plants, and marine products for your home aquarium. From vibrant tropical species to essential supplies, we have everything you need to create your own underwater paradise. Dive in and explore our ocean-inspired collection today.
+        </p>
+    </div>
+
     <div class="items">
         <!-- Category 1 -->
         <div class="category">
-            <h2 class="cateogry-title">
-                Varieties of Fish
-            </h2>
+            <h2 class="category-title">Varieties of Fish</h2>
             <div class="category-items">
-                <!-- Item 1 -->
+                <!-- Fish 1 -->
                 <div class="item">
-                    <img src="" alt="">
-                    <div class="item-name">Stainless steel straw set</div>
-                    <div class="item-desc">
-                        Reusable stainless steel straw set with 3 drinking straws, cleaning tool, and carrying case.
+                    <img src="Assests/False percula clownfish.png" alt="Clown Fish">
+                    <div class="item-name">Clown Fish</div>
+                    <div class="item-description">
+                        Clownfish are small, brightly colored fish known for their symbiotic relationship with sea anemones, which provide them protection from predators. They are found primarily in the warm waters of the Pacific and Indian Oceans.
                     </div>
                     <div class="inline">
-                        <div class="item-price"></div>
+                        <div class="item-price">3000.00 Rs</div>
                         <div class="item-quantity">
                             <label>Quantity: 
                                 <input class="quantity" type="number" name="quantity" value="1" min="1" max="20">
@@ -30,68 +35,11 @@
                         </div>
                     </div>
                     <div class="item-customizer">
-                        <label>Straw Engraving Choice: 
+                        <label>Specie Type:
                             <select name="customize-select" class="customize-select">
-                                <option value="No Pattern">No Pattern</option>
-                                <option value="Wind Pattern">Wind Pattern</option>
-                                <option value="Water Pattern">Water Pattern</option>
-                                <option value="Fire Pattern">Fire Pattern</option>
-                            </select>
-                        </label>
-                    </div>
-                    <button onclick="addToCart(this)">Add to cart</button>
-                </div>
-                
-                <!-- Item 2 -->
-                <div class="item">
-                    <img src="./Shop _ GREENPULSE_files/cutting-board.jpg" alt="Bamboo cutting board">
-                    <div class="item-name">Bamboo cutting board</div>
-                    <div class="item-desc">
-                        Sustainably sourced natural bamboo cutting boards available in a variety of sizes to fit your needs.
-                    </div>
-                    <div class="inline">
-                        <div class="item-price">Rs. 800.00</div>
-                        <div class="item-quantity">
-                            <label>Quantity: 
-                                <input class="quantity" type="number" name="quantity" value="1" min="1" max="20">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="item-customizer">
-                        <label>Board size
-                            <select name="customize-select" class="customize-select">
-                                <option value="Small (14&#39;&#39;)">Small (14'')</option>
-                                <option value="Medium (18&#39;&#39;)">Medium (18'')</option>
-                                <option value="Large (22&#39;&#39;)">Large (22'')</option>
-                                <option value="X-Large (25&#39;&#39;)">X-Large (25'')</option>
-                            </select>
-                        </label>
-                    </div>
-                    <button onclick="addToCart(this)">Add to cart</button>
-                </div>
-                
-                <!-- Item 3 -->
-                <div class="item">
-                    <img src="./Shop _ GREENPULSE_files/storage-container.jpeg" alt="Stainless Steel straws">
-                    <div class="item-name">Reusable container set</div>
-                    <div class="item-desc">
-                        Dishwasher and microwave safe food storage containers to replace disposable plastic containers. Available in a variety of colors. 
-                    </div>
-                    <div class="inline">
-                        <div class="item-price">Rs. 1600.00</div>
-                        <div class="item-quantity">
-                            <label>Quantity: 
-                                <input class="quantity" type="number" name="quantity" value="1" min="1" max="20">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="item-customizer">
-                        <label>Lid color: 
-                            <select name="customize-select" class="customize-select">
-                                <option value="Transparent">Transparent</option>
-                                <option value="Blue">Blue</option>
-                                <option value="Green">Green</option>
-                                <option value="Red">Red</option>
+                                <option value="False percula clownfish" selected>False percula clownfish</option>
+                                <option value="Tomato clownfish">Tomato clownfish</option>
+                                <option value="Clarkii clownfish">Clarkii clownfish</option>
                             </select>
                         </label>
                     </div>
@@ -99,5 +47,6 @@
                 </div>
             </div>
         </div>
-</body>    
+    </div>
+</body>
 </html>
