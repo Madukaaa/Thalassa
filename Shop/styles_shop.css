@@ -29,11 +29,13 @@ body, html {
     z-index: 2;
     width: 60%;
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: rgb(53, 53, 53);
+    margin-top: 90px;
+    padding: 30px;
 }
 
 .items {
-    display: flex;
+    display: inline-block;
     flex-direction: column;
     align-items: center;
     width: 80%;
@@ -42,6 +44,20 @@ body, html {
 .category {
     width: 100%;
     margin-bottom: 20px;
+}
+
+
+#clown{
+    padding-top: 50px;
+    width: 200px;
+    height: 130px;
+    overflow: hidden;
+}
+
+#coral{
+    width: 200px;
+    height: 180px;
+    overflow: hidden;
 }
 
 .category-title {
@@ -61,7 +77,7 @@ body, html {
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 20px;
-    margin: 10px;
+    margin: 30px;
     width: 200px;
     text-align: center;
 }
@@ -73,13 +89,13 @@ body, html {
 }
 
 .item img {
+    
     max-width: 100%;
     border-radius: 8px;
 }
 
 .item-name {
     font-size: 1.2em;
-    margin: 10px 0;
 }
 
 .item-description {
