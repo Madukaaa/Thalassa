@@ -18,20 +18,19 @@ body, html {
     margin: 0;
     font-family: Arial, sans-serif;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     position: relative;
 }
 
 #main-heading {
-    position: relative;
-    z-index: 2;
     width: 60%;
     text-align: center;
     color: rgb(53, 53, 53);
-    margin-top: 90px;
+    margin-top: 100px;
     padding: 30px;
+    box-sizing: border-box;
 }
 
 .items {
@@ -46,18 +45,18 @@ body, html {
     margin-bottom: 20px;
 }
 
-
-#clown{
-    padding-top: 50px;
+#clown, #coral, #fire {
     width: 200px;
-    height: 130px;
     overflow: hidden;
 }
 
-#coral{
-    width: 200px;
+#clown {
+    padding-top: 50px;
+    height: 130px;
+}
+
+#coral, #fire {
     height: 180px;
-    overflow: hidden;
 }
 
 .category-title {
@@ -86,10 +85,19 @@ body, html {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 30px;
+    width: 200px;
+}
+
+.inline-Fire{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 22px;
+    width: 200px;
 }
 
 .item img {
-    
     max-width: 100%;
     border-radius: 8px;
 }
@@ -120,6 +128,7 @@ body, html {
 
 .item-customizer {
     margin: 10px 0;
+    padding-top: 10px;
 }
 
 .customize-select {
