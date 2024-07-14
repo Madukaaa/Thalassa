@@ -1,5 +1,5 @@
 body, html {
-    background-image: url(Images/Background.jpg);
+    background-image: url(Images/Background1.jpg);
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
@@ -7,8 +7,8 @@ body, html {
     margin: 0;
     font-family: Arial, sans-serif;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .splash-container {
@@ -16,34 +16,48 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-grow: 1;
+    justify-content: flex-start;
+    padding-top: 20px;
 }
 
 .logo {
-    margin-bottom: 20px;
+    margin-bottom: 5px;
+    position: relative; top: 50%;
 }
 
 .large-logo {
-    width: 200px; /* Adjust this value to increase or decrease the logo size */
+    width: 500px;
     height: auto;
 }
 
 p {
     color: white;
     font-size: 1.2em;
-    margin-bottom: 20px;
 }
 
 .mission {
-    font-size: 1.5em;
-    font-weight: bold;
+    font-size: 1.2em;
+    position: relative; top: 50%;
 }
 
 .team-members {
-    margin-bottom: 30px;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.Names a {
+    text-decoration: none;
+    font-family: Helvetica, Arial, sans-serif;
+    color: white;
+    padding-left: 10px;
 }
 
 .loader {
-    margin-top: 20px;
+    position: relative; top: 75%;
 }
 
 .loader span {
