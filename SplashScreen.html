@@ -4,9 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thalassa</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome|Thalassa</h1>
-    <p>Testing</p>
+    <div class="splash-container">
+        
+        <div class="logo">
+            <img src="Images/Logo.png" alt="Logo" class="large-logo">
+        </div>
+
+        <p class="mission">Exploring the Wonders of Life Under Water</p>
+        <p class="team-members">
+            Team Members<br>
+            Alice Ocean, Bob Coral, Charlie Reef, Diana Wave
+        </p>
+        <div class="loader">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <script>
+        setTimeout(function() {
+            window.location.href = "home.html";
+        }, 4000);
+    </script>
 </body>
 </html>
