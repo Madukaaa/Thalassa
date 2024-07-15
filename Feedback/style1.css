@@ -1,0 +1,57 @@
+h1, h4 {
+    color: black;
+    text-align: center;
+}
+
+body{
+    content: "";
+    background-image: url('Background3.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 0.1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.Details { 
+    background-color: rgba(0, 0, 0, 0.637);
+    width: 600px;
+    margin-left: 26%;
+}
+
+#email-label {
+    padding-left: 51px;
+}
+
+.names {
+    display: flex;
+    justify-content: center;
+}
+
+.rating-scale {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.rating-scale input {
+    display: none;
+}
+
+.rating-scale label {
+    background-color: #e0e0e0;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 30px;
+    text-align: center;
+}
+
+.rating-scale input:checked + label {
+    background-color: #000000;
+    color: white;
+}
