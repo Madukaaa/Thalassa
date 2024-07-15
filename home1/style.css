@@ -1,24 +1,28 @@
+/* Ensure the body takes at least the full viewport height */
 body {
-    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
 }
 
 body::before {
     content: "";
-    background-image: url('background.jpg');
+    background-image: url("Assests/background.jpg");
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-    opacity: 0.2;
+    opacity: 0.5;
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
     z-index: -1;
+}
+
+header {
+    z-index: 1;
 }
 
 .navbar ul {
@@ -32,7 +36,7 @@ body::before {
     background-color: rgb(255, 255, 255);
     overflow: hidden;
     display: flex;
-    justify-content: flex-end; /* Changed from float: right to justify-content: flex-end */
+    justify-content: flex-end;
     align-items: center;
     z-index: 1000;
 }
@@ -41,7 +45,6 @@ body::before {
     padding-right: 40px;
     white-space: nowrap;
 }
-
 
 .navbar a {
     font-size: 14px;
@@ -57,12 +60,12 @@ body::before {
     color: rgb(53, 53, 53);
 }
 
-.container {
+main {
+    flex: 1;
+    margin-top: 80px; /* Adjust based on the height of your fixed header */
     position: relative;
     width: 100%;
-    height: calc(100vh - 80px);
     overflow: hidden;
-    margin-top: 80px;
 }
 
 .overlay {
@@ -98,5 +101,12 @@ img {
     padding-left: 30px;
     width: 16%;
     height: auto;
-    margin-right: auto; /* Added to push the logo to the left */
+    margin-right: auto;
+}
+
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
 }
