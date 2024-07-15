@@ -6,6 +6,21 @@ body {
     overflow-x: hidden;
 }
 
+body::before {
+    content: "";
+    background-image: url('background.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
 .navbar ul {
     position: fixed;
     top: 0;
@@ -14,7 +29,7 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     overflow: hidden;
     display: flex;
     justify-content: flex-end; /* Changed from float: right to justify-content: flex-end */
@@ -30,7 +45,7 @@ body {
 
 .navbar a {
     font-size: 14px;
-    color: rgb(203, 203, 203);
+    color: rgb(0, 0, 0);
     text-decoration: none;
     padding-top: 28px;
     padding-left: 20px;
@@ -39,7 +54,7 @@ body {
 }
 
 .navbar a:hover {
-    color: white;
+    color: rgb(53, 53, 53);
 }
 
 .container {
