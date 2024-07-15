@@ -72,6 +72,7 @@ main {
     position: absolute;
     top: 50%;
     left: 50%;
+    
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
@@ -105,8 +106,9 @@ img {
 }
 
 footer {
-    background-color: #f1f1f1;
+    background-color: #ffffff;
     text-align: center;
     padding: 10px 0;
     width: 100%;
+    font-family:Arial, Helvetica, sans-serif;
 }
