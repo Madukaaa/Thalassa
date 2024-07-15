@@ -7,15 +7,43 @@ body {
 
 body::before {
     content: "";
-    background-image: url("Files_home/background.jpg");
-    background-position: center;
-    background-attachment: fixed;
+    background-image: url("Files_home/background.jpg"),url("Files_home/Logo.png");
+    background-position: center,bottom;
+    background-attachment: fixed,scroll;
     background-size: cover;
     opacity: 0.9;
-    position: absolute;
+    position:fixed;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
     z-index: -1;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    z-index: 10;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.logo {
+    padding-top: 15px;
+    padding-left: 30px;
+    width: 16%;
+    height: auto;
+    margin-right: auto;
 }
