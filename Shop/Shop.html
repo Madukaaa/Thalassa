@@ -7,21 +7,20 @@
     <link rel="stylesheet" href="styles_shop.css">
 </head>
 <body>
-    <div>
     <div id="main-heading">
         <h1>SHOP</h1>
         <p id="shop-description">
-            Welcome to our aquatic haven. We offer a diverse array of live fish, sea plants, and marine products for your home aquarium. From vibrant tropical species to essential supplies, we have everything you need to create your own underwater paradise. Dive in and explore our ocean-inspired collection today.
+            Discover eco-friendly products and sustainable fishing gear designed to reduce ocean pollution and protect marine life. Every purchase supports ocean conservation efforts. Shop now and make a difference!
         </p>
     </div>
 
     <div class="items">
-        <!-- Category 1: Varieties of Fish -->
+        <!-- Category 1: Eco-Friendly Products -->
         <div class="category">
-            <h2 class="category-title">Varieties of Fish</h2>
+            <h2 class="category-title">Eco-Friendly Products</h2>
             <hr>
             <div class="category-items">
-                <!-- Fish 1 -->
+                <!-- Product 1 -->
                 <div class="item">
                     <div id="clown">
                         <img src="Assests/False percula clownfish.png" alt="Clown Fish">
@@ -50,7 +49,7 @@
                     <button onclick="addToCart(this)">Add to cart</button>
                 </div>
 
-                <!-- Fish 2 -->
+                <!-- Product 2 -->
                 <div class="item">
                     <div id="coral">
                         <img src="Assests/Coral Beauty Angelfish.png" alt="Coral">
@@ -79,7 +78,7 @@
                     <button onclick="addToCart(this)">Add to cart</button>
                 </div>
 
-                <!-- Fish 3 -->
+                <!-- Product 3 -->
                 <div class="item">
                     <div id="fire">
                         <img src="Assests/Firefish.png" alt="Fire">
@@ -110,99 +109,100 @@
             </div>
         </div>
 
-        <!-- Category 2: Sea Plants -->
-        <div class="category">
-            <h2 class="category-title">Sea Plants</h2>
-            <hr>
-            <div class="category-items">
-                <!-- Plant 1 -->
-                <div class="item">
-                    <div id="seaweed">
-                        <img src="Assests/Seaweed.png" alt="Seaweed">
-                    </div>
-                    <div class="item-name">Seaweed</div>
-                    <div class="item-description">
-                        Seaweed is a versatile plant used in aquariums for its beauty and the health benefits it offers to the marine ecosystem. It provides shelter and food for many marine species.
-                    </div>
-                    <div class="inline">
-                        <div class="item-price">200.00 Rs</div>
-                        <div class="item-quantity">
-                            <label>Quantity: 
-                                <input class="quantity" type="number" name="quantity" value="1" min="1" max="20">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="item-customizer">
-                        <label>Type of the species:
-                            <select name="customize-select" class="customize-select">
-                                <option value="Green Seaweed" selected>Green Seaweed</option>
-                                <option value="Red Seaweed">Red Seaweed</option>
-                                <option value="Brown Seaweed">Brown Seaweed</option>
-                            </select>
+       <!-- Category 1: Sustainable Fishing Gear -->
+       <div class="category">
+        <h2 class="category-title">Sustainable Fishing Gear</h2>
+        <hr>
+        <div class="category-items">
+            <!-- Product 1 -->
+            <div class="item">
+                <div id="clown">
+                    <img src="Assests/False percula clownfish.png" alt="Clown Fish">
+                </div>
+                <div class="item-name">Clown Fish</div>
+                <div class="item-description">
+                    Clownfish are small, brightly colored fish known for their symbiotic relationship with sea anemones, which provide them protection from predators. They are found primarily in the warm waters of the Pacific and Indian Oceans.
+                </div>
+                <div class="inline">
+                    <div class="item-price">3000.00 Rs</div>
+                    <div class="item-quantity">
+                        <label>Quantity: 
+                            <input class="quantity" type="number" name="quantity" value="1" min="1" max="20">
                         </label>
                     </div>
-                    <button onclick="addToCart(this)">Add to cart</button>
                 </div>
+                <div class="item-customizer">
+                    <label>Type of the species:
+                        <select name="customize-select" class="customize-select">
+                            <option value="False percula clownfish" selected>False percula clownfish</option>
+                            <option value="Tomato clownfish">Tomato clownfish</option>
+                            <option value="Clarkii clownfish">Clarkii clownfish</option>
+                        </select>
+                    </label>
+                </div>
+                <button onclick="addToCart(this)">Add to cart</button>
+            </div>
 
-                <!-- Plant 2 -->
-                <div class="item">
-                    <div id="coral-grass">
-                        <img src="Assests/Coral_Grass.png" alt="Coral Grass">
-                    </div>
-                    <div class="item-name">Coral Grass</div>
-                    <div class="item-description">
-                        Coral Grass is a beautiful addition to any aquarium, known for its bright green color and the natural habitat it creates for various marine creatures.
-                    </div>
-                    <div class="inline">
-                        <div class="item-price">500.00 Rs</div>
-                        <div class="item-quantity">
-                            <label>Quantity: 
-                                <input class="quantity" type="number" name="quantity" value="1" min="1" max="20">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="item-customizer">
-                        <label>Type of the species:
-                            <select name="customize-select" class="customize-select">
-                                <option value="Common Coral Grass" selected>Common Coral Grass</option>
-                                <option value="Giant Coral Grass">Giant Coral Grass</option>
-                                <option value="Dwarf Coral Grass">Dwarf Coral Grass</option>
-                            </select>
+            <!-- Product 2 -->
+            <div class="item">
+                <div id="coral">
+                    <img src="Assests/Coral Beauty Angelfish.png" alt="Coral">
+                </div>
+                <div class="item-name">Coral Beauty Angelfish</div>
+                <div class="item-description">
+                    The Coral Beauty Angelfish is a colorful, hardy fish from the Indo-Pacific, growing up to 4 inches. It features deep blue and bright orange hues and is popular in aquariums. This omnivore eats algae and marine foods.
+                </div>
+                <div class="inline">
+                    <div class="item-price">15000.00 Rs</div>
+                    <div class="item-quantity">
+                        <label>Quantity: 
+                            <input class="quantity" type="number" name="quantity" value="1" min="1" max="20">
                         </label>
                     </div>
-                    <button onclick="addToCart(this)">Add to cart</button>
                 </div>
+                <div class="item-customizer">
+                    <label>Type of the species:
+                        <select name="customize-select" class="customize-select">
+                            <option value="False percula clownfish" selected>False percula clownfish</option>
+                            <option value="Tomato clownfish">Tomato clownfish</option>
+                            <option value="Clarkii clownfish">Clarkii clownfish</option>
+                        </select>
+                    </label>
+                </div>
+                <button onclick="addToCart(this)">Add to cart</button>
+            </div>
 
-                <!-- Plant 3 -->
-                <div class="item">
-                    <div id="mangrove">
-                        <img src="Assests/Mangrove.png" alt="Mangrove">
-                    </div>
-                    <div class="item-name">Mangrove</div>
-                    <div class="item-description">
-                        Mangrove plants are excellent for aquariums, providing filtration and a unique aesthetic. They help maintain water quality and create a natural environment for marine life.
-                    </div>
-                    <div class="inline">
-                        <div class="item-price">1000.00 Rs</div>
-                        <div class="item-quantity">
-                            <label>Quantity: 
-                                <input class="quantity" type="number" name="quantity" value="1" min="1" max="20">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="item-customizer">
-                        <label>Type of the species:
-                            <select name="customize-select" class="customize-select">
-                                <option value="Red Mangrove" selected>Red Mangrove</option>
-                                <option value="Black Mangrove">Black Mangrove</option>
-                                <option value="White Mangrove">White Mangrove</option>
-                            </select>
+            <!-- Product 3 -->
+            <div class="item">
+                <div id="fire">
+                    <img src="Assests/Firefish.png" alt="Fire">
+                </div>
+                <div class="item-name">Firefish</div>
+                <div class="item-description">
+                    Fireish is an excellent addition to any tank if you want it to look more colorful. The firefish has a white and red gradient appearance, but there are also orange and magenta variations. Unlike other saltwater fish, firefish are very friendly.
+                </div>
+                <div class="inline-Fire">
+                    <div class="item-price">8500.00 Rs</div>
+                    <div class="item-quantity">
+                        <label>Quantity: 
+                            <input class="quantity" type="number" name="quantity" value="1" min="1" max="20">
                         </label>
                     </div>
-                    <button onclick="addToCart(this)">Add to cart</button>
                 </div>
+                <div class="item-customizer">
+                    <label>Type of the species:
+                        <select name="customize-select" class="customize-select">
+                            <option value="Common red firefish" selected>Common red firefish</option>
+                            <option value="Purple firefish">Purple firefish</option>
+                            <option value="Helfrich's firefish">Helfrich's firefish</option>
+                        </select>
+                    </label>
+                </div>
+                <button onclick="addToCart(this)">Add to cart</button>
             </div>
         </div>
+    </div>
+
     </div>
 
     <script src="script.js"></script>
