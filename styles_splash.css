@@ -9,7 +9,7 @@ body, html {
 }
 
 body {
-    background-image: url(Assests/Background2.jpg);
+    background-image: url(Files_splash/Background2.jpg);
     background-position: center;
     background-attachment: fixed;
     background-size: cover;

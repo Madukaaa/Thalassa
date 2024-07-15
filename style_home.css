@@ -7,7 +7,7 @@ body {
 
 body::before {
     content: "";
-    background-image: url("Assests/background.jpg");
+    background-image: url("Files_home/background.jpg");
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
