@@ -37,33 +37,6 @@ header {
     color: rgb(44, 10, 168);
 }
 
-main {
-    flex: 1;
-    margin-top: 80px; /* Adjust based on the height of your fixed header */
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-}
-
-.overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 300px;
-    height: 100px;
-    text-align: center;
-    color: white;
-    padding: 20px;
-    z-index: 10;
-}
-
-img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
 .logo {
     padding-top: 15px;
     padding-left: 30px;
@@ -72,10 +45,3 @@ img {
     margin-right: auto;
 }
 
-footer {
-    background-color: #ffffff;
-    text-align: center;
-    padding: 10px 0;
-    width: 100%;
-    font-family:Arial, Helvetica, sans-serif;
-}
