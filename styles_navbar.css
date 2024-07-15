@@ -37,3 +37,11 @@ header {
     color: rgb(44, 10, 168);
 }
 
+.logo {
+    padding-top: 15px;
+    padding-left: 30px;
+    width: 16%;
+    height: auto;
+    margin-right: auto;
+}
+
