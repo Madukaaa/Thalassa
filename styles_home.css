@@ -7,7 +7,7 @@ body {
 
 body::before {
     content: "";
-    background-color: #1388c1;
+    background: url("Files_home/Background-Home.jpg");
     background-position: center,bottom;
     background-attachment: fixed,scroll;
     background-size: cover;
