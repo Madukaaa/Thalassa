@@ -1,4 +1,3 @@
-/* Ensure the body takes at least the full viewport height */
 body {
     display: flex;
     flex-direction: column;
