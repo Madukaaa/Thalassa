@@ -5,11 +5,11 @@ h1, h4 {
 
 body{
     content: "";
-    background-image: url('Background3.jpg');
+    background-image: url('Files_feedback/background_image.jpg');
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-    opacity: 0.1;
+    opacity: 0.9;
     position: absolute;
     top: 0;
     left: 0;
@@ -25,6 +25,9 @@ body{
 
 #email-label {
     padding-left: 51px;
+}
+#feedback-form{
+    padding:120px;
 }
 
 .names {
