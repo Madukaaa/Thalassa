@@ -34,6 +34,17 @@ header {
     display: block;
     transition: color 0.3s ease;
 }
+.nav-links ul li a.active {
+    color: #f99007;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.nav-links ul li a:hover:not(.active) {
+    color: #ee1313;
+    transition-duration: 0.4s;
+}
+
 
 .navbar a:hover {
     color: rgb(255, 255, 255);
