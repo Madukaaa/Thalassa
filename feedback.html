@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thalassa-Feedback</title>
     <link rel="icon" href="Files_home/Favicon.svg">
+    
     <link rel="stylesheet" href="styles_feedback.css">
     <link rel="stylesheet" href="styles_navbar.css">
 </head>
@@ -76,8 +77,8 @@
                 <label for="comments">Comments:</label>
                 <textarea id="comments" placeholder="Enter your comments here" required></textarea>
             </div><br>
-
-            <button type="button" onclick="previewForm()">Preview</button>
+            <button type="button" id="preview-button" onclick="previewForm()">Preview</button>
+            
             <button type="submit">Submit</button>
         </fieldset>
     </form>
@@ -102,5 +103,6 @@
             <p>Thank you for your feedback!</p>
         </fieldset>
     </div>
+    <script src="script_feedback.js"></script>
 </body>
 </html>
