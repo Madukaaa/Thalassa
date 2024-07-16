@@ -17,16 +17,17 @@ body {
     width: 100%;
     z-index: -1;
     margin: 0;
+    color: rgb(0, 0, 0);
 }
 
 .Details {
-    background-color: rgba(0, 0, 0, 0.637);
+    background-color: rgba(255, 255, 255,1);
     width: 600px;
     margin-left: 26%;
 }
 
 #error-message {
-    color: rgb(204, 248, 8);
+    color: rgb(72, 86, 209);
     font-size: 1em;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
