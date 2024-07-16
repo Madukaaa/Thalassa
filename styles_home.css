@@ -105,3 +105,32 @@ img {
     display: flex;
     align-items: center;
 }
+
+.gallery {
+    height: 300px; /* Set the height to 500 pixels */
+    background-color: rgb(238, 238, 238);
+    padding: 40px 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-row {
+    display: flex;
+    justify-content: space-between;
+    width: 1100px;
+    max-width: 1200px; /* Example: Limit the max width of the gallery content */
+    margin: 0 auto; /* Center align the content horizontally */
+}
+
+.image-row img {
+    width: 100%; /* Make images fill their parent container */
+    max-width: 300px; /* Example: Limit the maximum width of each image */
+    cursor: pointer;
+}
+
+.image-row a {
+    flex: 1; /* Let each link occupy equal space */
+}
+
