@@ -53,6 +53,5 @@ function backToShop() {
 }
 
 function proceedToCheckout() {
-    // Implement checkout logic here
-    alert('Proceeding to checkout...');
+    window.location.href = 'Checkout.html'
 }

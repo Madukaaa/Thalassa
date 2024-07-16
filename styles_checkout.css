@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    padding: 10px;
+    background-color: #1388c1;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.checkout-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.payment-details, .billing-address, .contact-details {
+    flex: 1 1 300px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input, select {
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#back-to-cart, #make-payment {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#back-to-cart {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+#back-to-cart:hover {
+    background-color: #e0e0e0;
+}
+
+#make-payment {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#make-payment:hover {
+    background-color: #45a049;
+}
