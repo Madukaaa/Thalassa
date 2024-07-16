@@ -22,9 +22,9 @@ function displayCart() {
             itemElement.innerHTML = `
                 <span>${name} (${size})</span>
                 <span>Quantity: ${quantity}</span>
-                <span>Price: ${price} Rs</span>
+                <span>Price: ${price} </span>
                 <span>Total: ${itemTotal.toFixed(2)} Rs</span>
-                <button class="remove-item" data-index="${index}">×</button>
+                <button class="remove-item" data-index="${index}"><i class="fas fa-trash"></i></button>
             `;
             cartItemsContainer.appendChild(itemElement);
         });
