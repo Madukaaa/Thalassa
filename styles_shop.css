@@ -84,6 +84,7 @@ button:hover {
     background-color: #5197e3;
 }
 
+/* Cart icon */
 .cart-icon {
     position: fixed;
     bottom: 20px;
@@ -109,3 +110,4 @@ button:hover {
     height: 30px;
     fill: white;
 }
+
