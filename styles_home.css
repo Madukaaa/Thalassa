@@ -119,18 +119,13 @@ img {
 .image-row {
     display: flex;
     justify-content: space-between;
-    width: 1100px;
-    max-width: 1200px; /* Example: Limit the max width of the gallery content */
-    margin: 0 auto; /* Center align the content horizontally */
+    width: 1100px;    
 }
 
 .image-row img {
     width: 100%; /* Make images fill their parent container */
-    max-width: 300px; /* Example: Limit the maximum width of each image */
     cursor: pointer;
 }
 
-.image-row a {
-    flex: 1; /* Let each link occupy equal space */
-}
+
 
