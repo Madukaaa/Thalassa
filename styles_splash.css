@@ -15,6 +15,7 @@ body {
 
 
 .splash-container {
+    position: relative; top: 8%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -30,12 +31,12 @@ body {
 }
 
 .logo {
-    margin-bottom: 5px;
+    margin-bottom: 0;
     position: relative;
 }
 
 .large-logo {
-    width: 350px;
+    width: 250px;
     height: auto;
 }
 
@@ -47,7 +48,7 @@ p {
 
 .mission {
     font-weight: 100;
-    font-size: 1.2em;
+    font-size: 1em;
     margin-top: 20px;
 }
 
