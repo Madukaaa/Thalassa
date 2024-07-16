@@ -22,7 +22,9 @@
     <form id="feedback-form">
         <fieldset class="Details">
             <h1>Feedback Form</h1>
-            <h4>We highly appreciate your comments!</h4>
+            <h4>We highly appreciate your Feedback!</h4>
+
+            <div id="error-message" class="error-message"></div>
 
             <label for="email" id="email-label">Email address:</label>
             <input type="email" id="email" placeholder="Enter your Email Address" required><br><br>
@@ -33,10 +35,15 @@
 
                 <label for="lastname">Last name:</label>
                 <input type="text" id="lastname" placeholder="Last name" required>
+            </div><br>
+
+            <div class="phone">
+                <label for="phone">Phone number:</label>
+                <input type="tel" id="phone" placeholder="Telephone number" required  maxlength="10">
             </div>
 
             <div class="rates">
-                <p>Rate our website according to you:</p>
+                <p>Rate our website according to our services:</p>
                 <div class="rating-scale">
                     <input type="radio" id="rate-0" name="rating" value="0" required>
                     <label for="rate-0">0</label>
@@ -77,6 +84,7 @@
             <p><strong>Email:</strong> <span id="preview-email"></span></p>
             <p><strong>First Name:</strong> <span id="preview-firstname"></span></p>
             <p><strong>Last Name:</strong> <span id="preview-lastname"></span></p>
+            <p><strong>Phone Number:</strong> <span id="preview-phone"></span></p>
             <p><strong>Rating:</strong> <span id="preview-rating"></span></p>
             <p><strong>Comments:</strong> <span id="preview-comments"></span></p>
             <button type="button" onclick="editForm()">Edit</button>
