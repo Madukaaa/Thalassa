@@ -1,47 +1,42 @@
-let cart = [];
-
 function addToCart(button) {
     const item = button.closest('.item');
     const itemName = item.querySelector('.item-name').textContent;
-    const itemPrice = parseFloat(item.querySelector('.item-price').textContent);
-    const itemQuantity = parseInt(item.querySelector('.quantity').value);
+    const itemPrice = item.querySelector('.item-price').textContent;
+    const itemQuantity = item.querySelector('.quantity').value;
     const itemSize = item.querySelector('.customize-select').value;
 
-    const cartItem = {
-        name: itemName,
-        price: itemPrice,
-        quantity: itemQuantity,
-        size: itemSize
-    };
-
-    cart.push(cartItem);
+    const cartItem = `${itemName}|${itemPrice}|${itemQuantity}|${itemSize}`;
+    
+    let cart = localStorage.getItem('cart') || '';
+    cart += (cart ? ',' : '') + cartItem;
+    
+    localStorage.setItem('cart', cart);
     updateCartIcon();
-    saveCartToLocalStorage();
 }
 
 function updateCartIcon() {
     const cartIcon = document.querySelector('.cart-icon');
-    const itemCount = cart.reduce((total, item) => total + item.quantity, 0);
+    const cart = localStorage.getItem('cart') || '';
+    const itemCount = cart ? cart.split(',').length : 0;
+    
+    let countElement = cartIcon.querySelector('.item-count');
     
     if (itemCount > 0) {
-        if (!cartIcon.querySelector('.item-count')) {
-            const countElement = document.createElement('div');
+        if (!countElement) {
+            countElement = document.createElement('div');
             countElement.className = 'item-count';
             cartIcon.appendChild(countElement);
         }
-        cartIcon.querySelector('.item-count').textContent = itemCount;
-    } else {
-        const countElement = cartIcon.querySelector('.item-count');
-        if (countElement) {
-            cartIcon.removeChild(countElement);
-        }
+        countElement.textContent = itemCount;
+    } else if (countElement) {
+        cartIcon.removeChild(countElement);
     }
 }
 
-function saveCartToLocalStorage() {
-    localStorage.setItem('cart', JSON.stringify(cart));
-}
-
+// Add event listener to cart icon
 document.querySelector('.cart-icon').addEventListener('click', () => {
     window.location.href = 'cart.html';
 });
+
+// Call updateCartIcon when page loads
+document.addEventListener('DOMContentLoaded', updateCartIcon);
