@@ -101,6 +101,7 @@ img {
 }
 
 .goal-content {
+    color: white;
     max-width: 600px;
     display: flex;
     align-items: center;
