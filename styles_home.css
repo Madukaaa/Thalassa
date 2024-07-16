@@ -1,24 +1,23 @@
 body {
     display: flex;
     flex-direction: column;
-    min-height:100vh;
+    min-height: 100vh;
     margin: 0;
 }
 
 body::before {
     content: "";
     background: url("Files_home/Background-Home.jpg");
-    background-position: center,bottom;
-    background-attachment: fixed,scroll;
+    background-position: center, bottom;
+    background-attachment: fixed, scroll;
     background-size: cover;
-    position:fixed;
+    position: fixed;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
     z-index: -1;
 }
-
 
 .overlay {
     position: absolute;
@@ -45,4 +44,35 @@ img {
     width: 16%;
     height: auto;
     margin-right: auto;
+}
+
+.background2 {
+    font-size: larger;
+    text-align: center;
+    color: #f0f0f096;
+}
+
+/* New styles for the mission section */
+.mission-section {
+    background-color: white;
+    padding: 40px 20px;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+    margin-top: 100vh; /* Ensure the section is below the full viewport height */
+}
+
+.mission-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.mission-content h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.mission-content p {
+    font-size: 1.2em;
+    line-height: 1.5;
 }
