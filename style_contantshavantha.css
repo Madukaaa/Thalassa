@@ -2,12 +2,13 @@
 header {
     z-index: 1;
 }
-h1{
+h1 {
     text-align: center;
 }
-h2{
+h2 {
     text-align: center;
-}body::before {
+}
+body::before {
     content: "";
     background: url("File_contant-shavantha/background_contant.jpg");
     background-position: center, bottom;
@@ -22,7 +23,8 @@ h2{
 }
 
 .content-nav {
-    position: fixed; top: 120px;
+    position: fixed;
+    top: 120px;
     background: #005bb5;
     width: 100%;
     padding: 10px;
@@ -129,13 +131,18 @@ p {
 }
 
 .image-placeholder {
-    background-color: #f0f0f0;
+    background-color: #ffffff;
     height: 200px;
     margin: 20px 0;
     display: flex;
     justify-content: center;
     align-items: center;
     font-style: italic;
-    color: #666;
-    border: 1px solid #ddd;
+    
+}
+
+.image-placeholder img {
+    max-width: 50%;
+    height: auto;
+    border: none;
 }
