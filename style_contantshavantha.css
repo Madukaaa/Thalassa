@@ -5,6 +5,37 @@ header {
 h1{
     text-align: center;
 }
+h2{
+    text-align: center;
+}body::before {
+    content: "";
+    background: url("File_contant-shavantha/background_contant.jpg");
+    background-position: center, bottom;
+    background-attachment: fixed, scroll;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.content-nav {
+    position: fixed; top: 120px;
+    background: #005bb5;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+.content-nav a {
+    color: #fff;
+    padding-left: 100px;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
 
 .navbar ul {
     position: fixed;
