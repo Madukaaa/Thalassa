@@ -146,3 +146,11 @@ p {
     height: auto;
     border: none;
 }
+
+.anchor::before {
+    content: "";
+    display: block;
+    height: 150px; /* Adjust this value based on the height of your fixed navigation bar */
+    margin-top: -150px; /* Adjust this value based on the height of your fixed navigation bar */
+    visibility: hidden;
+}
