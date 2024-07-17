@@ -43,7 +43,6 @@ html {
     color: white;
 }
 
-/* New styles for article sections */
 .article-section {
     background-color: rgba(255, 255, 255, 0.8);
     color: black;
@@ -51,9 +50,7 @@ html {
     margin: 20px auto;
     width: 80%;
     border-radius: 10px;
-    /* Add top padding to account for the fixed navbar */
     padding-top: 120px;
-    /* Adjust margin to align content */
     margin-top: -60px;
 }
 
@@ -75,7 +72,7 @@ html {
 
 .image-space {
     width: 100%;
-    max-height: 550px; /* Adjust this value as needed */
+    max-height: 550px;
     margin-bottom: 20px;
     border-radius: 5px;
     overflow: hidden;

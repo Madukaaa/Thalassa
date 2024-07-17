@@ -29,7 +29,6 @@ function displayCart() {
             cartItemsContainer.appendChild(itemElement);
         });
 
-        // Add event listeners to remove buttons
         document.querySelectorAll('.remove-item').forEach(button => {
             button.addEventListener('click', removeItem);
         });

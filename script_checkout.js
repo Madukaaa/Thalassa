@@ -66,7 +66,6 @@ document.addEventListener('DOMContentLoaded', function() {
         window.location.href = 'cart.html';
     });
 
-    // Populate order summary
     const orderItems = document.getElementById('order-items');
     const orderTotal = document.getElementById('order-total');
     const cart = localStorage.getItem('cart') || '';

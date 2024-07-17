@@ -1,4 +1,4 @@
-/* Navigation bar styles */
+
 header {
     z-index: 1;
 }
@@ -95,7 +95,6 @@ body::before {
     margin-right: auto;
 }
 
-/* Content styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -150,7 +149,7 @@ p {
 .anchor::before {
     content: "";
     display: block;
-    height: 150px; /* Adjust this value based on the height of your fixed navigation bar */
-    margin-top: -150px; /* Adjust this value based on the height of your fixed navigation bar */
+    height: 150px; 
+    margin-top: -150px; 
     visibility: hidden;
 }

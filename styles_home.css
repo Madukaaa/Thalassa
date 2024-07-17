@@ -60,7 +60,7 @@ img {
     text-align: center;
     z-index: 1;
     position: relative;
-    margin-top: 100vh; /* Ensure the section is below the full viewport height */
+    margin-top: 100vh;
 }
 
 .mission-content {
