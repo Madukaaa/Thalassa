@@ -145,8 +145,6 @@ p {
     height: auto;
     border: none;
 }
-<<<<<<< HEAD
-=======
 
 .anchor::before {
     content: "";
@@ -155,4 +153,3 @@ p {
     margin-top: -150px; 
     visibility: hidden;
 }
->>>>>>> c31e328b4e67c29c62a125ea60cd8ce6c5a274a9
