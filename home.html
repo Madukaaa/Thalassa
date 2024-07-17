@@ -67,21 +67,27 @@
     
     <footer>
         <hr>
-        Authors: Maduka Karunathilake, Shavantha Fernando, Abhishek Weerasinghe, Lasen Kumarasinghe<br>
-        &copy; copyright reserved <br>
+        <div class = "footer-container">
+            <div class = "footer-column1">
+                <h2>ABOUT</h2>
+                <a href="index.html">HOME</a>
+                <a href="AboutUs.html">TEAM</a>
+                <a href="Shop.html">SHOP</a>
+                <a href="Gallery.html">GALLERY</a>
+            </div>
+    
+            <div class = "footer-column2">
+                <h2>CONTACT</h2>
+                <p>+94 11 278 2343</p>
+                <p>zyrrohunger@gmail.com</p>
+            </div>
+    
+            <div class="footer-column3">
+               <p>THE ZYRRO CONCEPET Copyright © 2024 THE ZYRRO CONCEPET - All rights reserved. <br>Designed by || <a href="#">Kaveesha Sulakshana</a></p>
+            </div>
+        
     </footer>
     
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const currentLocation = location.href;
-            const menuItems = document.querySelectorAll('.nav-links ul li a');
-            const menuLength = menuItems.length;
-            for (let i = 0; i < menuLength; i++) {
-                if (menuItems[i].href === currentLocation) {
-                    menuItems[i].classList.add('active');
-                }
-            }
-        });
-    </script>
+    
 </body>
 </html>
