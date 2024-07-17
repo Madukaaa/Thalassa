@@ -125,3 +125,29 @@ h1{
     background-color: #1388c1;
     border-color: #1388c1;
 }
+
+.designer {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+    z-index: 3;
+}
+
+.designer p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #1388c1;
+}
+
+.designer a {
+    text-decoration: none;
+    color: #1388c1;
+    font-weight: bold;
+}
+
+.designer a:hover {
+    text-decoration: underline;
+}
