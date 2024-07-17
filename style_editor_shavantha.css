@@ -7,7 +7,7 @@ body {
 
 body::before {
     content: "";
-    background: url("Files_editor-shavantha/Background.jpg");
+    background: url("File_editor_shavantha/background_image_editor.jpg");
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
