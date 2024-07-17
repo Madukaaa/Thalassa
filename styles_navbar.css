@@ -59,4 +59,12 @@ header {
     height: auto;
     margin-right: auto;
 }
+.navbar a.active {
+    color: #f99007;
+    text-decoration: underline;
+    font-weight: bold;
+}
 
+.navbar a.active:hover {
+    color: #f99007;
+}
