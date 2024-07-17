@@ -62,18 +62,26 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    document.getElementById('back-to-cart').addEventListener('click', function() {
+        window.location.href = 'cart.html';
+    });
+
     // Populate order summary
     const orderItems = document.getElementById('order-items');
     const orderTotal = document.getElementById('order-total');
-    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    const cart = localStorage.getItem('cart') || '';
 
     let total = 0;
-    cart.forEach(item => {
-        const itemElement = document.createElement('p');
-        itemElement.textContent = `${item.name} - ${item.price} Rs (Quantity: ${item.quantity})`;
-        orderItems.appendChild(itemElement);
-        total += item.price * item.quantity;
-    });
+    if (cart) {
+        const items = cart.split(',');
+        items.forEach(item => {
+            const [name, price, quantity, size] = item.split('|');
+            const itemElement = document.createElement('p');
+            itemElement.textContent = `${name} - ${price} (Quantity: ${quantity}, Size: ${size})`;
+            orderItems.appendChild(itemElement);
+            total += parseFloat(price) * parseInt(quantity);
+        });
+    }
 
     orderTotal.textContent = `${total.toFixed(2)} Rs`;
 });
