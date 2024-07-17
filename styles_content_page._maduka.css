@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: url('Files_content_maduka/Background2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0px;
+    padding-top: 100px;
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.content-nav {
+    position: fixed; 
+    top: 120px;
+    background: rgba(0, 91, 181, 0.8);
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+.content-nav a {
+    color: #fff;
+    padding-left: 50px;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.content-nav a:hover {
+    color: #ffcc00;
+}
+
+.topic {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 60%;
+    margin: 200px auto;
+    padding: 20px;
+    text-align: center; 
+    border-radius: 10px;
+    color: white;
+}
+
+/* New styles for article sections */
+.article-section {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    /* Add top padding to account for the fixed navbar */
+    padding-top: 120px;
+    /* Adjust margin to align content */
+    margin-top: -60px;
+}
+
+.article-section h2 {
+    color: #005bb5;
+}
+
+.article-section h3 {
+    color: #007acc;
+}
+
+.article-section ul {
+    padding-left: 20px;
+}
+
+.article-section li {
+    margin-bottom: 10px;
+}
