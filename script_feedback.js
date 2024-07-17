@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', function() {
     if (form) {
         form.addEventListener('submit', function(event) {
             event.preventDefault();
-            // Handle form submission here if needed
         });
     }
 

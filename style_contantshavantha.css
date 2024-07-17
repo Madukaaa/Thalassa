@@ -1,4 +1,4 @@
-/* Navigation bar styles */
+
 header {
     z-index: 1;
 }
@@ -95,7 +95,6 @@ body::before {
     margin-right: auto;
 }
 
-/* Content styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -146,3 +145,14 @@ p {
     height: auto;
     border: none;
 }
+<<<<<<< HEAD
+=======
+
+.anchor::before {
+    content: "";
+    display: block;
+    height: 150px; 
+    margin-top: -150px; 
+    visibility: hidden;
+}
+>>>>>>> c31e328b4e67c29c62a125ea60cd8ce6c5a274a9
