@@ -33,10 +33,8 @@ function updateCartIcon() {
     }
 }
 
-// Add event listener to cart icon
 document.querySelector('.cart-icon').addEventListener('click', () => {
     window.location.href = 'cart.html';
 });
 
-// Call updateCartIcon when page loads
 document.addEventListener('DOMContentLoaded', updateCartIcon);
