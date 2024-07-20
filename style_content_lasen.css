@@ -9,7 +9,7 @@
 
 /* body style */
 body{
-    background-image: linear-gradient(rgba(189, 201, 224, 0.8),rgba(189, 201, 224, 0.8)), url(background.jpg);
+    background-image: linear-gradient(rgba(189, 201, 224, 0.8),rgba(189, 201, 224, 0.8)), url(file_sitemap/background_image.jpg);
     font-family: "Anek Malayalam", sans-serif;
     background-size: cover;
     color: #fff;

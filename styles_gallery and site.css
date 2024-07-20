@@ -8,7 +8,7 @@
 
 body {
     background: rgb(23, 23, 88);
-    background-image: url("background_image.jpg");
+    background-image: url("file_sitemap/background_image.jpg");
     background-repeat: no-repeat;
     background-size: cover; /* Ensures the background image covers the entire background */
     background-position: center; /* Centers the background image */
