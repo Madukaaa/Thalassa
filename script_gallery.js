@@ -55,11 +55,3 @@ thumbnails.forEach((thumbnail, index) => {
     })
 })
 
-//site map
-
-const sitemap = document.getElementById('sitemap');
-const aspectRatio = sitemap.viewBox.baseVal.width / sitemap.viewBox.baseVal.height;
-window.addEventListener('resize', () => {
-  sitemap.style.height = `${window.innerWidth / aspectRatio}px`;
-});
-window.dispatchEvent(new Event('resize'));
