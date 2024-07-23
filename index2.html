@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Page</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <div id="header-logo">
+        <img src="Logo1.png" alt="Thalasa Logo" class="header-logo-img">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="Shop.html">Shop</a></li>
+            <li><a href="site.html">Site Map</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="index2.html">Team</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Student Details</h1>
+        <p>About Us - Hover over the images for details!</p>
+    </header>
+    <hr class="separator">
+    <main>
+        <div id="team-container">
+            <div class="team-member" onmouseover="showDetails('student1')" onmouseout="hideDetails('student1')">
+                <img src="student1.jpg" alt="Student 1">
+                <div id="student1" class="details">
+                    <p><strong>Maduka Karunathilka</strong></p>
+                    <p><strong>Role:</strong> Student 1</p>
+                    <p><strong>Designed and implemented pages:</strong></p>
+                    <ul>
+                        <li>Splash Screen</li>
+                        <li>Shop</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="team-member" onmouseover="showDetails('student2')" onmouseout="hideDetails('student2')">
+                <img src="student2.jpg" alt="Student 2">
+                <div id="student2" class="details">
+                    <p><strong>Shavantha Fernando</strong></p>
+                    <p><strong>Role:</strong> Student 2</p>
+                    <p><strong>Designed and implemented pages:</strong></p>
+                    <ul>
+                        <li>Home Page</li>
+                        <li>Templates</li>
+                        <li>Navigation</li>
+                        <li>Feedback</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="team-member" onmouseover="showDetails('student3')" onmouseout="hideDetails('student3')">
+                <img src="student3.jpg" alt="Student 3">
+                <div id="student3" class="details">
+                    <p><strong>Abhishek Weerasinghe</strong></p>
+                    <p><strong>Role:</strong> Student 3</p>
+                    <p><strong>Designed and implemented pages:</strong></p>
+                    <ul>
+                        <li>User Profile</li>
+                        <li>Team</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="team-member" onmouseover="showDetails('student4')" onmouseout="hideDetails('student4')">
+                <img src="student4.jpg" alt="Student 4">
+                <div id="student4" class="details">
+                    <p><strong>Lasen Kumarasinghe</strong></p>
+                    <p><strong>Role:</strong> Student 4</p>
+                    <p><strong>Designed and implemented pages:</strong></p>
+                    <ul>
+                        <li>Gallery</li>
+                        <li>Site Map</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 Thalasa. All rights reserved.</p>
+    </footer>
+    <script>
+        function showDetails(id) {
+            document.getElementById(id).style.display = 'block';
+        }
+
+        function hideDetails(id) {
+            document.getElementById(id).style.display = 'none';
+        }
+    </script>
+</body>
+</html>
