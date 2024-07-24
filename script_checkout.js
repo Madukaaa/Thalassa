@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function validateExpiryDate(value) {
-        return /^(0[1-9]|1[0-2])\/\d{2}$/.test(value);
+        return /^(0[1-9]|[1-5][0-9])\/\d{2}$/.test(value);
     }
 
     function validateCVV(value) {
