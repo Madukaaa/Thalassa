@@ -45,7 +45,7 @@ function showSlider(){
     refreshInterval = setInterval(() => {
         next.click();
     }, 5000)
-}
+}   
 
 // click thumbnail
 thumbnails.forEach((thumbnail, index) => {
@@ -60,3 +60,4 @@ thumbnails.forEach((thumbnail, index) => {
 
 
 
+    
